@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Fale com a Sinapse Elétric e solicite um orçamento para projetos elétricos, laudos, SPDA, consultoria e energia solar.">
+  <meta name="theme-color" content="#0B2E6F">
+  <title>Contato | Sinapse Elétric</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Cabeçalho fixo com logo, navegação e botão de WhatsApp. -->
+  <header class="header">
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="Página inicial da Sinapse Elétric">
+        <img src="assets/logo/logo-sinapse.png" alt="Logo Sinapse Elétric">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" aria-label="Menu principal">
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="energia-solar.html">Energia Solar</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn btn-whatsapp js-whatsapp" href="#">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Entre em contato</p>
+        <h1>Solicite um orçamento ou tire suas dúvidas com a Sinapse Elétric.</h1>
+        <p class="lead">Escolha o serviço desejado e envie sua mensagem. O formulário abre o WhatsApp com os dados já
+          organizados.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-info">
+          <article class="card contact-item reveal">
+            <div class="icon-box">☏</div>
+            <div>
+              <h3>WhatsApp</h3>
+              <p><a class="js-whatsapp" href="#">(62) 9999418-9130</a></p>
+            </div>
+          </article>
+          <article class="card contact-item reveal">
+            <div class="icon-box">✉</div>
+            <div>
+              <h3>E-mail</h3>
+              <p><a href="mailto:contato@sinapseeletric.com.br">joaodamasceno@sinapseeletric.com</a></p>
+            </div>
+          </article>
+          <article class="card contact-item reveal">
+            <div class="icon-box">📍</div>
+            <div>
+              <h3>Atendimento</h3>
+              <p>Goiás - Brasil.</p>
+            </div>
+          </article>
+          <article class="card contact-item reveal">
+            <div class="icon-box">🌐</div>
+            <div>
+              <h3>Rede social</h3>
+              <p>
+                <a href="https://www.instagram.com/sinapseenergy" target="_blank">
+                  @sinapseenergy
+                </a>
+              </p>
+            </div>
+          </article>
+        </aside>
+        <section class="card reveal">
+          <h2>Formulário de contato</h2>
+          <p>Preencha os campos abaixo para iniciar o atendimento.</p>
+          <form id="contactForm" class="form">
+            <div class="form-group"><label for="nome">Nome</label><input id="nome" name="nome" type="text"
+                placeholder="Seu nome" required></div>
+            <div class="form-group"><label for="telefone">Telefone</label><input id="telefone" name="telefone"
+                type="tel" placeholder="(00) 00000-0000" required></div>
+            <div class="form-group"><label for="email">E-mail</label><input id="email" name="email" type="email"
+                placeholder="seuemail@exemplo.com"></div>
+            <div class="form-group"><label for="servico">Tipo de serviço</label><select id="servico" name="servico"
+                required>
+                <option value="">Selecione uma opção</option>
+                <option>Projetos elétricos</option>
+                <option>Laudos técnicos</option>
+                <option>SPDA</option>
+                <option>Consultoria elétrica</option>
+                <option>Energia solar</option>
+                <option>Manutenção elétrica</option>
+                <option>Outro</option>
+              </select></div>
+            <div class="form-group"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem"
+                placeholder="Descreva sua necessidade" required></textarea></div><button class="btn btn-primary"
+              type="submit">Enviar mensagem</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+  <!-- Botão fixo de WhatsApp presente em todas as páginas. -->
+  <a class="whatsapp-float js-whatsapp" href="#" aria-label="Falar com a Sinapse Elétric pelo WhatsApp">☏</a>
+
+  <!-- Rodapé institucional com links rápidos e dados de contato. -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/logo/logo-sinapse.svg" alt="Logo Sinapse Elétric">
+          <p>A Sinapse Elétric oferece soluções elétricas modernas, seguras e eficientes para residências, empresas e
+            indústrias.</p>
+        </div>
+        <div>
+          <h3>Links rápidos</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="energia-solar.html">Energia Solar</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Serviços</h3>
+          <ul>
+            <li>Projetos elétricos</li>
+            <li>Laudos técnicos</li>
+            <li>SPDA</li>
+            <li>Consultoria elétrica</li>
+            <li>Energia solar</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <ul>
+            <li><a class="js-whatsapp" href="#">WhatsApp: (62) 999418-9130</a></li>
+            <li><a href="mailto:contato@sinapseeletric.com.br">joaodamasceno@sinapseeletric.com</a></li>
+            <li>Goiás - Brasil</li>
+            <p>
+                <a href="https://www.instagram.com/sinapseenergy" target="_blank">
+                  @sinapseenergy
+                </a>
+              </p>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sinapse Elétric. Todos os direitos reservados.</p>
+        <p>Desenvolvido por André Fornazier.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script global com menu mobile, animações e WhatsApp. -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<svg width="260" height="72" viewBox="0 0 260 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sinapse Elétric">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="260" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38CFFF"/><stop offset="0.5" stop-color="#1E88D8"/><stop offset="1" stop-color="#0B2E6F"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <circle cx="34" cy="36" r="26" fill="url(#g)" opacity=".16"/>
+  <path d="M18 39h16l-6 18 20-26H32l6-16-20 24Z" fill="url(#g)" filter="url(#glow)"/>
+  <path d="M55 21h21m-21 15h30m-30 15h21" stroke="#38CFFF" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <text x="92" y="34" font-family="Poppins, Montserrat, Arial" font-size="24" font-weight="800" fill="#0B2E6F">Sinapse</text>
+  <text x="92" y="56" font-family="Poppins, Montserrat, Arial" font-size="20" font-weight="600" fill="#1E88D8">Elétric</text>
+</svg>
