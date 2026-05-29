@@ -760,3 +760,24 @@ textarea {
     bottom: 16px;
   }
 }
+/* Ajuste do cabeçalho no mobile */
+@media (max-width: 768px) {
+  header,
+  .header,
+  .site-header,
+  .navbar {
+    padding: 6px 16px;
+    min-height: 80px;
+  }
+
+  .logo img,
+  header img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .menu-toggle,
+  .hamburger {
+    font-size: 28px;
+  }
+}
