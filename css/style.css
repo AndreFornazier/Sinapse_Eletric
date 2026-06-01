@@ -781,3 +781,95 @@ textarea {
     font-size: 28px;
   }
 }
+<<<<<<< HEAD
+=======
+/* =========================================================
+   GALERIA NA PÁGINA DE ENERGIA SOLAR
+   ========================================================= */
+
+.solar-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.solar-gallery-card {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(6, 27, 58, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.solar-gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra);
+  border-color: rgba(56, 207, 255, 0.35);
+}
+
+.solar-gallery-image {
+  position: relative;
+  height: 310px;
+  overflow: hidden;
+  background: var(--cinza-claro);
+}
+
+.solar-gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.solar-gallery-card:hover .solar-gallery-image img {
+  transform: scale(1.06);
+}
+
+.solar-gallery-tag {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--azul-principal), var(--azul-escuro));
+  color: var(--branco);
+  font-size: 0.82rem;
+  font-weight: 900;
+  box-shadow: 0 10px 25px rgba(6, 27, 58, 0.2);
+}
+
+.solar-gallery-content {
+  padding: 28px;
+}
+
+.solar-gallery-content h3 {
+  margin-bottom: 12px;
+}
+
+.solar-gallery-content p {
+  margin-bottom: 22px;
+  color: var(--cinza-texto);
+}
+
+/* Responsividade da galeria */
+@media (max-width: 900px) {
+  .solar-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-gallery-image {
+    height: 260px;
+  }
+}
+
+@media (max-width: 640px) {
+  .solar-gallery-image {
+    height: 220px;
+  }
+
+  .solar-gallery-content {
+    padding: 24px;
+  }
+}
+>>>>>>> 2d838f4 (AlteraçõesIMGS)

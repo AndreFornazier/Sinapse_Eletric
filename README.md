@@ -110,7 +110,8 @@ js/script.js
 
 Procure a linha:
 
-```js;
+```js
+const WHATSAPP_NUMBER = '5562999999999';
 ```
 
 Troque pelo número real da empresa no formato internacional, sem espaços, parênteses ou traços.
@@ -118,6 +119,7 @@ Troque pelo número real da empresa no formato internacional, sem espaços, par�
 Exemplo:
 
 ```js
+const WHATSAPP_NUMBER = '5562998765432';
 ```
 
 ## Como trocar a logo
