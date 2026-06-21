@@ -103,3 +103,72 @@ if (contactForm) {
     window.open(buildWhatsappLink(whatsappMessage), '_blank', 'noopener,noreferrer');
   });
 }
+/* =========================================================
+   CARROSSEL - PROJETO RESIDENCIAL
+   ========================================================= */
+
+document.querySelectorAll('.solar-carousel').forEach((carousel) => {
+  const track = carousel.querySelector('.solar-carousel-track');
+  const slides = carousel.querySelectorAll('.solar-carousel-slide');
+  const prevButton = carousel.querySelector('.solar-carousel-prev');
+  const nextButton = carousel.querySelector('.solar-carousel-next');
+  const dotsContainer = carousel.querySelector('.solar-carousel-dots');
+
+  let currentSlide = 0;
+
+  if (!track || slides.length === 0) return;
+
+  // Cria as bolinhas automaticamente
+  slides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.classList.add('solar-carousel-dot');
+
+    if (index === 0) {
+      dot.classList.add('active');
+    }
+
+    dot.addEventListener('click', () => {
+      currentSlide = index;
+      updateCarousel();
+    });
+
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = carousel.querySelectorAll('.solar-carousel-dot');
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
+    }
+
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentSlide--;
+
+    if (currentSlide < 0) {
+      currentSlide = slides.length - 1;
+    }
+
+    updateCarousel();
+  }
+
+  nextButton.addEventListener('click', nextSlide);
+  prevButton.addEventListener('click', prevSlide);
+
+  // Passa automaticamente a cada 4 segundos
+  setInterval(nextSlide, 4000);
+});
